@@ -1,0 +1,21 @@
+{
+  "name": "example5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-middleware": "^3.6.2"
+  }
+}
