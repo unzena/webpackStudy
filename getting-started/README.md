@@ -11,8 +11,7 @@
 
 3. create index.js & index.html
 
-# html
-
+```html
 <!-- index.html old-->
 <html>
   <head>
@@ -23,54 +22,49 @@
     <script src="app/index.js"></script>
   </body>
 </html>
+```
 
-# index.js
-
-import _ from 'lodash';
+```js
+//  index.js
+import _ from "lodash";
 
 function component() {
-var element = document.createElement("div");
-
-element.innerHTML = _.join(["Hello", "webpack"], " ");
-
-return element;
+  var element = document.createElement("div");
+  element.innerHTML = _.join(["Hello", "webpack"], " ");
+  return element;
 }
 
 document.body.appendChild(component());
+```
 
-# html modify
-
--- delete
-
+```html
+<!-- html modify -->
+<!-- delete -->
 <script src="https://unpkg.com/lodash@4.16.6"></script>
 <script src="app/index.js"></script>
+<!-- insert -->
 
--- insert
 <script src="dist/bundle.js"></script>
+```
 
 6. run this command below and start the index.html.
 
+```text
 webpack app/index.js dist/bundle.js
+```
 
-7. Let's add config file for more complex configuration
+7. Let's add webpack.config.js
 
-// webpack.config.js
-// `webpack` command will pick up this config setup by default
-
+```js
+//  webpack.config.js
 var path = require("path");
 
 module.exports = {
   entry: "./app/index.js",
-  output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
-  }
+  output: { filename: "bundle.js", path: path.resolve(__dirname, "dist") }
 };
+```
 
-## License & Copyright
-
-**Copyright © 2017 Captain Pangyo**
-<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br>
-This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.
-## 장기효님 infrun lecture
+```text
+ 위는 장기효 강사님의 인프런 강의 복습한 소스 정리임을 알리는 바입니다.
 ```
