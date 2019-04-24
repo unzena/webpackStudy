@@ -6,8 +6,12 @@
    npm init -y
 
 2. Install webpack && Install lodash
+
+```text
+webpack4 의 경우 webpack-cli 를 같이 설치해야한다.
    npm i --save-dev webpack webpack-cli
    npm i --save lodash
+```
 
 3. create index.js & index.html
 
