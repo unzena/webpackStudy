@@ -1,6 +1,6 @@
 # 학습목표
 
-: webpack의 css bundling 의 이해
+: webpack의 Manifest, chunk의 이해
 
 #### Example 2 - Libraries Code Splitting
 
