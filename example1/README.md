@@ -15,6 +15,7 @@ npm init -y
 - As for CSS files, use `css-loader`for default setting. The extra option `ExtractTextWebpackPlugin` is available for better performance
 
 ```text
+npm i --save-dev webpack webpack-cli
 npm i css-loader style-loader --save-dev
 npm i --save-dev extract-text-webpack-plugin@next
 ```

@@ -15,7 +15,7 @@ npm init -y
 - When using a couple of libraries, should you import them at the very beginning of bundling all files to avoid repetitively use them in every build.
 
 ```text
-npm install webpack --save-dev
+npm i --save-dev webpack webpack-cli
 npm install moment lodash --save
 npm i webpack-manifest-plugin --save-dev
 ```
